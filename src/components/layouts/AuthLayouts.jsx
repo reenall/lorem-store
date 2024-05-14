@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 export default function AuthLayouts(props){
    const {children, title, type, goTo} = props
 
+   if(localStorage.getItem('token')) window.location.href = '/'
+
    return (
     <div className={`flex justify-center gap-x-3 min-h-screen items-center py-20`}>
       <div className="w-full max-w-[500px] text-sm">

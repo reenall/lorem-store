@@ -43,7 +43,6 @@ export default function NavBar({ products }) {
             <SideBar name={'menu'} position={'-translate-x-full left-0'} onToggle={() => handleToggle('menu', '-translate-x-full')}>
                <LeftBar/>
             </SideBar>
-            {/* <LeftBarMenu onToggle={() => handleToggle('leftBarMenu', '-translate-x-full')}/>                            */}
 
             {/* Nav Brand */}
             <div className="text-center">
