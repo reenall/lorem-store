@@ -8,9 +8,9 @@ export default function OurDesigner(){
                <h2 className="section-title border-2">{`Our designers`}</h2>
 
                <div className="relative h-[580px] mt-24">
-                  <img src="/img/model1.jpg" alt="designer 1" className="float-right mr-56 max-w-[350px] max-h-full shadow-xl"/>
+                  <img src="img/model1.jpg" alt="designer 1" className="float-right mr-56 max-w-[350px] max-h-full shadow-xl"/>
 
-                  <img src="/img/model2.jpg" alt="designer 2" className="absolute bottom-0 right-40 max-w-[250px] shadow-xl"/>
+                  <img src="img/model2.jpg" alt="designer 2" className="absolute bottom-0 right-40 max-w-[250px] shadow-xl"/>
                
                   <p className="designer-text">
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga obcaecati animi cupiditate voluptate. Fuga dignissimos hic alias, commodi nesciunt veritatis earum reiciendis quam repudiandae.
