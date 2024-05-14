@@ -27,7 +27,7 @@ export default function OurDesigner(){
                   <h2 className="section-title">About lorem</h2>
 
                   <div className="mt-20">
-                     <img src="/img/model9.jpg" alt="Lorem founder" className="max-w-[250px] h-max float-left mr-5 "/>
+                     <img src="img/model9.jpg" alt="Lorem founder" className="max-w-[250px] h-max float-left mr-5 "/>
                      <p className="text-justify italic font-medium text-slate-800 first-letter:text-5xl first-line:uppercase first-line:not-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, sapiente vero expedita fugiat molestias aut. Magni qui culpa alias nesciunt a, beatae rerum unde minus dolorem asperiores amet cumque inventore maxime molestias, debitis ut labore! Dolore praesentium voluptate tempora ab mollitia, cum ipsam minus distinctio fugiat.Soluta dolore facere asperiorespossimus adipisci quam. Repellendus obcaecati minus neque, placeat aliquid quibusdam deleniti dolores quidem voluptatem? Laudantium veniam labore aliquid ipsam natus esse amet animi repudiandae, beatae voluptate nesciunt unde, quia porro optio aliquam iste voluptas perferendis corrupti ipsa provident officiis eveniet sapiente recusandae. Eius eligendi facere vel repellat nisi? Odit, natus.</p>
                   </div>
                </div>
