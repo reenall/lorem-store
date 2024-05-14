@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth
+}
+
+/* width */
+body::-webkit-scrollbar {
+   @apply w-[3px] 
+ }
+ 
+ /* Track */
+ body::-webkit-scrollbar-track {
+   @apply bg-black
+ }
+ 
+ /* Handle */
+ body::-webkit-scrollbar-thumb {
+   @apply bg-bgSecondary
+ }
+ 
+ /* Handle on hover */
+ body::-webkit-scrollbar-thumb:hover {
+   @apply bg-slate-500 dark:hover:bg-slate-300
+ }
+
+
+/* ------------------------ NavBar ------------------------ */
+
+/* ------------ Hamburger ------------ */
+.hamburger-stripe {
+  @apply w-[20px] h-[2px] rounded-full bg-primary dark:bg-darkBgSecondary group-hover:bg-secondary transition duration-300
+}
+
+.leftBar-list {
+  @apply hover:text-secondary hover:border-b-2 pb-1
+}
+
+
+/* ------------------------ Products ------------------------ */
+
+/* ------------ *General* ------------ */
+.section-title {
+  @apply text-center font-medium text-[40px] text-primary tracking-widest uppercase
+}
+
+/* ------------ Hero ------------ */
+#hero > * img {
+  @apply h-[100%] w-full object-cover object-top
+}
+
+/* ------------ Designer ------------ */
+.designer-text {
+  @apply first-letter:text-5xl first-line:uppercase first-letter:ml-5 font-medium
+}
+
+/* ------------ Hot Products ------------ */
+#hot-products > * img {
+  @apply h-[400px] shadow-xl
+}
+
+/* ------------ Footer ------------ */
+.footer-col {
+  @apply flex flex-col gap-[6px] max-w-[200px]
+}
+
+.footer-title {
+  @apply font-semibold text-slate-900 mb-3
+}
