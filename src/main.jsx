@@ -14,11 +14,11 @@ import store from './redux/store'
 import DarkModeContextProvider from './context/DarkMode'
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <h1>Hellow World!</h1>,
-    errorElement: <ErrorMessage />
-  },
+  // {
+  //   path: '/',
+  //   element: <h1>Hellow World!</h1>,
+  //   errorElement: <ErrorMessage />
+  // },
   {
     path: '/login',
     element: <LoginPage/>
@@ -28,9 +28,13 @@ const router = createBrowserRouter([
     element: <RegisterPage/>
   },
   {
-    path: '/products',
+    path: '/',
     element: <ProductPage/>
   },
+  // {
+  //   path: '/products',
+  //   element: <ProductPage/>
+  // },
   {
     path: '/product/:id',
     element: <DetailProduct/>
