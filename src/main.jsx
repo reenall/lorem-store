@@ -39,7 +39,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <DarkModeContextProvider>
-        <RouterProvider router={router} />
+        <ProductPage/>
+        {/* <RouterProvider router={router} /> */}
       </DarkModeContextProvider>
     </Provider>
   </React.StrictMode>,
