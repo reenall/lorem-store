@@ -1,8 +1,13 @@
 export default function Footer(){
    return (
       <footer id="bantuan" className="pt-28 pb-16 bg-bgSecondary">
-         <div className="px-20 font-raleway tracking-wider text-xs uppercase">
-            <div className="flex flex-wrap gap-10 text-slate-600">
+         <div className="font-raleway tracking-wider uppercase text-[10px] px-10
+         md:px-14
+         lg:text-[11px] lg:px-20
+         xl:text-xs">
+            <div className="flex flex-wrap justify-between text-secondary
+            sm:gap-7 sm:flex-nowrap sm:justify-normal
+            lg:gap-10">
                <ul className="footer-col">
                   <h4 className="footer-title">Bantuan</h4>
                   <li>Pengiriman</li>
