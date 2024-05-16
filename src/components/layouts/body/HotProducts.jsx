@@ -14,10 +14,10 @@ export default function HotProducts(){
             <img src="img/model6.jpg" alt="Hot product 1"/>
             <img src="img/model5.jpg" alt="Hot product 2"/>
             <img src="img/model9.jpg" alt="Hot product 3"/>
-            <img src="img/model7.jpg" alt="Hot product 4"/>
+            <img src="img/model10.jpg" alt="Hot product 4"/>
          </div>
 
-         <p className="text-center pt-12 px-5 text-sm
+         <p className="text-center pt-12 px-8 text-sm
          sm:px-16
          md:px-24 md:text-sm md:pt-16
          lg:px-36 lg:text-base

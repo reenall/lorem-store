@@ -34,7 +34,7 @@ export default function NavBar({ products }) {
 
 
    return (
-      <nav className="xl:bg-white lg:bg-yellow-400 md:bg-green-400 sm:bg-red-200 fixed z-50 w-full bg-bgPrimary dark:bg-darkBgPrimary transition-all duration-1000
+      <nav className="fixed z-50 w-full bg-bgPrimary dark:bg-darkBgPrimary transition-all duration-1000
          h-[50px] px-7
          sm:px-10
          md:h-[55px] md:px-12

@@ -56,9 +56,9 @@ function CardBody(props){
       <div className="font-sans mt-2 flex justify-between h-full">
          <div className="">
             <a href={`/product/${product.id}`} target="_blank">
-               <h3 className="text-[11px] text-secondary uppercase hover:text-primary
-               lg:text-xs"
-               >{product.title.substring(0, 30) + '...'}</h3>
+               <h3 className="text-[11px] text-secondary uppercase hover:text-primary line-clamp-1
+                  lg:text-xs
+               ">{product.title}</h3>
             </a>
 
             <p className="text-[11px] text-secondary

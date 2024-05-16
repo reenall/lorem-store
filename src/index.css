@@ -71,7 +71,7 @@ body::-webkit-scrollbar {
 /* ------------ Designer ------------ */
 .designer-text {
   @apply first-letter:text-5xl first-letter:ml-3 first-line:uppercase font-medium text-sm
-  sm:first-letter:ml-5
+  sm:first-letter:ml-5 sm:text-justify
   md:text-xs
   lg:text-sm
   xl:text-base

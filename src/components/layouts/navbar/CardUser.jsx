@@ -8,7 +8,7 @@ export default function CardUser({ username, onLogOut }){
             <h4 className="border-y uppercase py-5 text-center
                text-[11px]
                xl:text-xs">Account</h4>
-            <p className="text-center
+            <p className="text-center font-normal
                pt-7
                xl:pt-10">Hi, {username}</p>
 

@@ -20,18 +20,18 @@ export default function OurDesigner(){
                   lg:h-[460px]
                   xl:h-[580px]
                "> 
-                  <img src="img/model1.jpg" alt="designer 1" className="float-right shadow-xl max-h-full 
-                     max-w-[175px] 
+                  <img src="img/model15.jpg" alt="designer 1" className="float-right shadow-xl max-h-full mb-14
+                     ml-5 max-w-[175px] 
                      sm:ml-10 sm:max-w-[200px]
-                     md:mr-5 md:ml-0
-                     lg:mr-10 lg:max-w-[225px]
+                     md:ml-3 md:mr-4
+                     lg:ml-3 lg:mr-10 lg:max-w-[225px]
                      xl:mr-32 xl:max-w-[300px]
                   "/> 
 
-                  <img src="img/model2.jpg" alt="designer 2" className="absolute 
+                  <img src="img/model13.jpg" alt="designer 2" className="absolute 
                      -right-5 bottom-[70px] shadow-xl max-w-[125px]
                      sm:-right-10 sm:bottom-0 sm:max-w-[150px] 
-                     md:-right-3 md:bottom-2
+                     md:-right-4 md:bottom-2
                      lg:-right-3 lg:bottom-16 lg:max-w-[175px] 
                      xl:right-14 xl:bottom-20 xl:max-w-[225px]
                   "/> 
@@ -64,10 +64,10 @@ export default function OurDesigner(){
                      sm:mt-20 sm:max-w-[550px]
                      md:max-w-max
                   ">
-                     <img src="img/model9.jpg" alt="Lorem founder" className="float-left 
-                        mr-5 max-w-[175px] 
+                     <img src="img/model9.jpg" alt="Lorem founder" className="float-left m-5 mr-7
+                        max-w-[175px] 
                         sm:max-w-[200px]
-                        lg:max-w-[200px]
+                        md:m-0 md:mr-5
                         xl:max-w-[250px]
                      "/> 
                      <p className="designer-text text-justify italic first-line:not-italic first-letter:ml-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, sapiente vero expedita fugiat molestias aut. Magni qui culpa alias nesciunt a, beatae rerum unde minus dolorem asperiores amet cumque inventore maxime molestias, debitis ut labore! Dolore praesentium voluptate tempora ab mollitia, cum ipsam minus distinctio fugiat.Soluta dolore facere asperiorespossimus adipisci quam. Repellendus obcaecati minus neque, placeat aliquid quibusdam deleniti dolores quidem voluptatem? Laudantium veniam labore aliquid ipsam natus esse amet animi repudiandae, beatae voluptate nesciunt unde, quia porro optio aliquam iste voluptas perferendis corrupti ipsa provident officiis eveniet sapiente recusandae. Eius eligendi facere vel repellat nisi? Odit, natus.</p>

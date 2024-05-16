@@ -59,7 +59,9 @@ export default function RightBar({ products }){
                         <div className="flex flex-col gap-2 justify-center py-5 w-full 
                         text-[11px] px-3
                         xl:text-xs xl:px-5">
-                           <h4 className="font-medium uppercase">{product.title.substring(0, 25) + '...'}</h4>
+                           <a href={`/product/${product.id}`} target="_blank">
+                              <h4 className="font-medium uppercase line-clamp-1 hover:text-secondary">{product.title}</h4>
+                           </a>
                            <p className="text-slate-600">$ {Intl.NumberFormat('id-ID').format(product.price)}</p>
                            <p className="text-slate-600">Total = {Intl.NumberFormat('id-ID').format(product.price * product.qty)}</p>
 
