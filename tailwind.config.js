@@ -23,7 +23,7 @@ export default {
         darkSecondary: '#000000',
         darkBgPrimary: '#000000',
         darkBgSecondary: '#fff'
-      }
+      },
     },
   },
   plugins: [],

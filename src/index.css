@@ -29,15 +29,27 @@ body::-webkit-scrollbar {
 
 /* ------------------------ NavBar ------------------------ */
 
-/* ------------ Hamburger ------------ */
 .hamburger-stripe {
   @apply rounded-full bg-primary dark:bg-darkBgSecondary group-hover:bg-secondary transition duration-300
+  h-[1px] w-[15px]
   sm:h-[1px] sm:w-[20px]
   md:h-[2px]
 }
 
+.navlist-svg {
+  @apply dark:text-darkPrimary
+  w-[18px]
+  sm:w-[19px]
+  md:w-[21px]
+  lg:w-[24px]
+}
+
 .leftBar-list {
   @apply hover:text-secondary hover:border-b-2 pb-1
+}
+
+#total-price {
+  word-spacing: 7px;
 }
 
 
@@ -53,12 +65,13 @@ body::-webkit-scrollbar {
 
 /* ------------ Hero ------------ */
 #hero > * img {
-  @apply h-[100%] w-full object-cover object-top
+  @apply h-full w-full object-cover object-top
 }
 
 /* ------------ Designer ------------ */
 .designer-text {
-  @apply first-letter:text-5xl first-line:uppercase first-letter:ml-5 font-medium 
+  @apply first-letter:text-5xl first-letter:ml-3 first-line:uppercase font-medium text-sm
+  sm:first-letter:ml-5
   md:text-xs
   lg:text-sm
   xl:text-base
@@ -75,8 +88,8 @@ body::-webkit-scrollbar {
 
 /* ------------ Footer ------------ */
 .footer-col {
-  @apply flex flex-col gap-[6px] mb-8 w-[40%]
-  sm:mb-0 sm:w-auto sm:max-w-[200px] sm:pr-0
+  @apply flex flex-col gap-[6px] mb-8 w-[45%] mx-auto p-5 border
+  sm:w-auto sm:max-w-[200px] sm:p-0 sm:m-0 sm:border-0
 }
 
 .footer-title {

@@ -4,10 +4,10 @@ import { addToCart } from "../../redux/slices/cartSlice"
 export default function CardProduct({children}){
    return(
       <div className="flex flex-col w-full pb-5
-      sm:w-[175px]
-      md:w-[200px]
-      lg:w-[225px]
-      xl:w-[250px]
+         sm:w-[175px]
+         md:w-[200px]
+         lg:w-[225px]
+         xl:w-[250px]
       ">
          {children}
       </div>
@@ -17,10 +17,11 @@ export default function CardProduct({children}){
 function CardImage({image, id, index}){
    return (
       <div>
-         <a href={`/product/${id}`} target="_blank" className="relative flex items-center justify-center h-[250px]
-         sm:h-[275px]
-         md:h-[300px]
-         lg:h-[350px]
+         <a href={`/product/${id}`} target="_blank" className="relative flex items-center justify-center 
+            h-[250px]
+            sm:h-[275px]
+            md:h-[300px]
+            lg:h-[350px]
          ">
 
             {/* backdrop */}
@@ -28,8 +29,12 @@ function CardImage({image, id, index}){
                <div className="absolute w-full h-full bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500 border-y-[20px] border-black/70"></div>
 
                <div className="flex items-center justify-center h-[100px] overflow-hidden">
-                  <svg className="translate-y-[100px] group-hover:translate-y-0 text-slate-300 transition duration-500"  
-                     width={50} viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="icomoon-ignore"> </g> <path d="M28.591 27.273l-7.263-7.264c1.46-1.756 2.339-4.010 2.339-6.471 0-5.595-4.535-10.129-10.129-10.129-5.594 0-10.129 4.535-10.129 10.129 0 5.594 4.536 10.129 10.129 10.129 2.462 0 4.716-0.879 6.471-2.339l7.263 7.264 1.319-1.319zM4.475 13.538c0-4.997 4.065-9.063 9.063-9.063 4.997 0 9.063 4.066 9.063 9.063s-4.066 9.063-9.063 9.063c-4.998 0-9.063-4.066-9.063-9.063z" fill="currentColor"> </path> </g>
+                  <svg className="translate-y-[100px] group-hover:translate-y-0 text-slate-300 transition duration-500
+                     w-[40px]
+                     lg:w-[43px]
+                     xl:w-[45px]
+                  "  
+                     viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="icomoon-ignore"> </g> <path d="M28.591 27.273l-7.263-7.264c1.46-1.756 2.339-4.010 2.339-6.471 0-5.595-4.535-10.129-10.129-10.129-5.594 0-10.129 4.535-10.129 10.129 0 5.594 4.536 10.129 10.129 10.129 2.462 0 4.716-0.879 6.471-2.339l7.263 7.264 1.319-1.319zM4.475 13.538c0-4.997 4.065-9.063 9.063-9.063 4.997 0 9.063 4.066 9.063 9.063s-4.066 9.063-9.063 9.063c-4.998 0-9.063-4.066-9.063-9.063z" fill="currentColor"> </path> </g>
                   </svg>
                </div>
             </div>

@@ -1,22 +1,40 @@
 export default function OurDesigner(){
    return (
-      <div id="our-designer" className="py-52 bg-bgPrimary">
-         <div className="flex">
+      <div id="our-designer" className="bg-bgPrimary
+         py-48 
+         md:py-52
+      ">
+         <div className="md:flex">
 
             {/* designers */}
-            <div className="w-1/2 h-max pl-3">
-               <h2 className="section-title border-2">{`Our designers`}</h2>
+            <div className="w-full h-max px-5
+            md:w-1/2 md:pl-3">
+               <h2 className="section-title border-2 w-max px-10 mx-auto
+               sm:px-20
+               md:w-full md:px-0">Our designers</h2>
 
-               <div className="relative mt-24 xl:h-[580px] lg:h-[460px] md:h-[360px]">
-                  <img src="img/model1.jpg" alt="designer 1" className="float-right max-h-full shadow-xl 
-                  md:mr-20 md:max-w-[200px]
-                  lg:mr-20 lg:max-w-[250px] 
-                  xl:mr-40 xl:max-w-[350px]"/> 
+               <div className="relative mt-24 mx-auto overflow-y-clip
+                  h-[380px] max-w-[450px]
+                  sm:h-[350px] sm:max-w-[550px] sm:overflow-y-visible
+                  md:max-w-max
+                  lg:h-[460px]
+                  xl:h-[580px]
+               "> 
+                  <img src="img/model1.jpg" alt="designer 1" className="float-right shadow-xl max-h-full 
+                     max-w-[175px] 
+                     sm:ml-10 sm:max-w-[200px]
+                     md:mr-5 md:ml-0
+                     lg:mr-10 lg:max-w-[225px]
+                     xl:mr-32 xl:max-w-[300px]
+                  "/> 
 
-                  <img src="img/model2.jpg" alt="designer 2" className="absolute bottom-0 shadow-xl
-                  md:right-10 md:max-w-[150px]
-                  lg:right-10 lg:max-w-[200px] 
-                  xl:right-24 xl:max-w-[250px]"/> 
+                  <img src="img/model2.jpg" alt="designer 2" className="absolute 
+                     -right-5 bottom-[70px] shadow-xl max-w-[125px]
+                     sm:-right-10 sm:bottom-0 sm:max-w-[150px] 
+                     md:-right-3 md:bottom-2
+                     lg:-right-3 lg:bottom-16 lg:max-w-[175px] 
+                     xl:right-14 xl:bottom-20 xl:max-w-[225px]
+                  "/> 
                
                   <p className="designer-text">
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga obcaecati animi cupiditate voluptate. Fuga dignissimos hic alias, commodi nesciunt veritatis earum reiciendis quam repudiandae.
@@ -28,18 +46,30 @@ export default function OurDesigner(){
             </div>
 
             {/* About lorem */}
-            <div className="pt-28 w-1/2">
-               <div className="flex flex-col justify-center 
-               md:ml-20 md:mr-10
-               lg:ml-20 lg:mr-10
-               xl:ml-40 xl:mr-20"> 
+            <div className="w-full h-max px-5
+               mt-36
+               sm:mt-28
+               md:w-1/2
+            ">
+               <div className="flex flex-col justify-center
+                  mx-auto 
+                  md:ml-10 md:mr-5
+                  lg:ml-20 lg:mr-10
+                  xl:ml-36 xl:mr-20
+               "> 
                   <h2 className="section-title">About lorem</h2>
 
-                  <div className="mt-20">
-                     <img src="img/model9.jpg" alt="Lorem founder" className="float-left mr-5 
-                     md:max-w-[200px]
-                     lg:max-w-[225px]
-                     xl:max-w-[250px]"/> 
+                  <div className="max-w-[450px] 
+                     mt-16 mx-auto
+                     sm:mt-20 sm:max-w-[550px]
+                     md:max-w-max
+                  ">
+                     <img src="img/model9.jpg" alt="Lorem founder" className="float-left 
+                        mr-5 max-w-[175px] 
+                        sm:max-w-[200px]
+                        lg:max-w-[200px]
+                        xl:max-w-[250px]
+                     "/> 
                      <p className="designer-text text-justify italic first-line:not-italic first-letter:ml-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, sapiente vero expedita fugiat molestias aut. Magni qui culpa alias nesciunt a, beatae rerum unde minus dolorem asperiores amet cumque inventore maxime molestias, debitis ut labore! Dolore praesentium voluptate tempora ab mollitia, cum ipsam minus distinctio fugiat.Soluta dolore facere asperiorespossimus adipisci quam. Repellendus obcaecati minus neque, placeat aliquid quibusdam deleniti dolores quidem voluptatem? Laudantium veniam labore aliquid ipsam natus esse amet animi repudiandae, beatae voluptate nesciunt unde, quia porro optio aliquam iste voluptas perferendis corrupti ipsa provident officiis eveniet sapiente recusandae. Eius eligendi facere vel repellat nisi? Odit, natus.</p>
                   </div>
                </div>

@@ -1,6 +1,8 @@
 export default function LeftBar(){
    return (
-      <ul className="p-10 flex flex-col gap-3 text-lg">
+      <ul className="p-10 flex flex-col gap-3
+      text-base
+      xl:text-lg">
          <li><a href="#hero" className="leftBar-list">Hero</a></li>
          <li><a href="#our-designer" className="leftBar-list">Our Designers</a></li>
          <li><a href="#hot-products" className="leftBar-list">Hot Products</a></li>

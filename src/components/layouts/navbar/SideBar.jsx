@@ -2,10 +2,16 @@ export default function SideBar(props){
    const { children, onToggle, name, position } = props
 
    return (
-      <div id={name} className={`fixed ${position} top-0 z-[999] flex flex-col h-screen w-[450px] bg-bgSecondary shadow-2xl transition duration-1000`}>
+      <div id={name} className={`fixed ${position} top-0 z-[999] flex flex-col h-screen bg-bgSecondary transition duration-1000 
+      w-[350px]
+      xl:w-[450px]`}>
          {/* --------------- Header --------------- */}
-         <div className="px-10 py-6 flex justify-between items-center border-b">
-            <h2 className="font-cormorant text-2xl font-bold uppercase tracking-widest">{name}</h2>
+         <div className="flex justify-between items-center border-b
+         py-5 px-6
+         xl:py-6 xl:px-10">
+            <h2 className="font-cormorant font-bold uppercase tracking-widest
+            text-lg
+            xl:text-2xl">{name}</h2>
             <button onClick={onToggle}>
                <svg className="w-[17px] text-secondary hover:text-primary transition-all duration-300"
                   transform={name === 'cart' ? "matrix(1, 0, 0, 1, 0, 0)" : "matrix(-1, 0, 0, 1, 0, 0)"} 

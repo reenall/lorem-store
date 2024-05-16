@@ -1,6 +1,9 @@
 export default function HotProducts(){
    return(
-      <div id="hot-products" className="py-52 bg-bgSecondary">
+      <div id="hot-products" className="bg-bgSecondary
+         py-48 
+         md:py-52
+      ">
          <h2 className="section-title">Hot products</h2>
 
          <div className="grid grid-cols-2 w-full justify-center mt-20

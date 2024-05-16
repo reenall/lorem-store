@@ -2,7 +2,10 @@ import CardProduct from "../../fragments/CardProduct"
 
 export default function LoremCollection({ products }){
    return (
-      <div id="lorem-collections" className="py-52 bg-bgPrimary">
+      <div id="lorem-collections" className="bg-bgPrimary
+         py-48 
+         md:py-52
+      ">
          <h2 className="section-title border-2 w-max px-5 mx-auto
          sm:px-20 sm:w-max sm:ml-10">
             {`Lorem's collection`}
