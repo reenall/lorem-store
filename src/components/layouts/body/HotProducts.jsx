@@ -11,10 +11,10 @@ export default function HotProducts(){
          md:mt-20 md:gap-2 
          lg:gap-3 
          xl:mt-24">
-            <img src="img/model6.jpg" alt="Hot product 1"/>
-            <img src="img/model5.jpg" alt="Hot product 2"/>
-            <img src="img/model9.jpg" alt="Hot product 3"/>
-            <img src="img/model10.jpg" alt="Hot product 4"/>
+            <img src="img/model17.jpg" alt="Hot product 3"/>
+            <img src="img/model18.jpg" alt="Hot product 1"/>
+            <img src="img/model2.jpg" alt="Hot product 2"/>
+            <img src="img/model6.jpg" alt="Hot product 4"/>
          </div>
 
          <p className="text-center pt-12 px-8 text-sm

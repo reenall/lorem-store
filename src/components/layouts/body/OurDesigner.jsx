@@ -20,7 +20,7 @@ export default function OurDesigner(){
                   lg:h-[460px]
                   xl:h-[580px]
                "> 
-                  <img src="img/model15.jpg" alt="designer 1" className="float-right shadow-xl max-h-full mb-14
+                  <img src="img/designer1.jpg" alt="designer 1" className="float-right shadow-xl max-h-full mb-14
                      ml-5 max-w-[175px] 
                      sm:ml-10 sm:max-w-[200px]
                      md:ml-3 md:mr-4
@@ -28,7 +28,7 @@ export default function OurDesigner(){
                      xl:mr-32 xl:max-w-[300px]
                   "/> 
 
-                  <img src="img/model13.jpg" alt="designer 2" className="absolute 
+                  <img src="img/model11.jpg" alt="designer 2" className="absolute 
                      -right-5 bottom-[70px] shadow-xl max-w-[125px]
                      sm:-right-10 sm:bottom-0 sm:max-w-[150px] 
                      md:-right-4 md:bottom-2
@@ -64,7 +64,7 @@ export default function OurDesigner(){
                      sm:mt-20 sm:max-w-[550px]
                      md:max-w-max
                   ">
-                     <img src="img/model9.jpg" alt="Lorem founder" className="float-left m-5 mr-7
+                     <img src="img/model3.jpg" alt="Lorem founder" className="float-left m-5 mr-7
                         max-w-[175px] 
                         sm:max-w-[200px]
                         md:m-0 md:mr-5

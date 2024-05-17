@@ -63,6 +63,10 @@ body::-webkit-scrollbar {
   xl:text-[35px]
 }
 
+#alert {
+  word-spacing: 5px
+}
+
 /* ------------ Hero ------------ */
 #hero > * img {
   @apply h-full w-full object-cover object-top

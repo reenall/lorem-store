@@ -74,7 +74,7 @@ export default function RightBar({ products }){
                                  <button className="w-1/3" onClick={() => handleQuantityButton(product.id, 'increase')}>+</button>
                               </div>
                               
-                              <button onClick={() => handleQuantityButton(product.id, 'remove')} className="underline underline-offset-4">Remove</button>
+                              <button onClick={() => handleQuantityButton(product.id, 'remove')} className="border-b border-slate-700">Remove</button>
                            </div>
                         </div>
                      </div>

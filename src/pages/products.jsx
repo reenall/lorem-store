@@ -23,7 +23,7 @@ export default function ProductPage(){
          <OurDesigner/>
          <HotProducts/>
          <LoremCollection products={products}/>
-         <Footer/>
+         <Footer/>         
       </div>
    )
 }

@@ -11,10 +11,10 @@ export default function Hero(){
             lg:pt-[65px]
             xl:pt-[70px]
          ">
-            <img src="img/model6.jpg" alt="image 1" />
-            <img src="img/model13.jpg" alt="image 2" />
-            <img src="img/model9.jpg" alt="image 3" />
-            <img src="img/model15.jpg" alt="image 4" />
+            <img src="img/model1.jpg" alt="image 4" />
+            <img src="img/model11.jpg" alt="image 2" />
+            <img src="img/model3.jpg" alt="image 1" />
+            <img src="img/model2.jpg" alt="image 3" />
          </div>
       </div>
    )

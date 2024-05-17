@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux"
 import { addToCart } from "../../redux/slices/cartSlice"
+import Alert from "../elements/Alert"
 
 export default function CardProduct({children}){
    return(
@@ -26,12 +27,15 @@ function CardImage({image, id, index}){
 
             {/* backdrop */}
             <div className="absolute flex items-center justify-center w-full h-full group">
-               <div className="absolute w-full h-full bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500 border-y-[20px] border-black/70"></div>
+               <div className="absolute w-full h-full bg-black/40 transition duration-500 border-y-[20px] border-neutral-400/70
+                  opacity-0
+                  lg:group-hover:opacity-100
+               "></div>
 
                <div className="flex items-center justify-center h-[100px] overflow-hidden">
-                  <svg className="translate-y-[100px] group-hover:translate-y-0 text-slate-300 transition duration-500
-                     w-[40px]
-                     lg:w-[43px]
+                  <svg className="text-slate-300 transition duration-500
+                     translate-y-[100px]
+                     lg:w-[43px] lg:group-hover:translate-y-0
                      xl:w-[45px]
                   "  
                      viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="icomoon-ignore"> </g> <path d="M28.591 27.273l-7.263-7.264c1.46-1.756 2.339-4.010 2.339-6.471 0-5.595-4.535-10.129-10.129-10.129-5.594 0-10.129 4.535-10.129 10.129 0 5.594 4.536 10.129 10.129 10.129 2.462 0 4.716-0.879 6.471-2.339l7.263 7.264 1.319-1.319zM4.475 13.538c0-4.997 4.065-9.063 9.063-9.063 4.997 0 9.063 4.066 9.063 9.063s-4.066 9.063-9.063 9.063c-4.998 0-9.063-4.066-9.063-9.063z" fill="currentColor"> </path> </g>
@@ -52,6 +56,15 @@ function CardBody(props){
    const cardPrice = priceToStr.substring(0, priceToStr.length - 3)
    const dispatch = useDispatch()
 
+   function handleAlert() {
+      const alertToggle = () => document.getElementById('alert').classList.toggle('opacity-100')
+      alertToggle()
+
+      setTimeout(() => {
+         alertToggle()
+      }, 1500);
+   }
+
    return (
       <div className="font-sans mt-2 flex justify-between h-full">
          <div className="">
@@ -66,7 +79,13 @@ function CardBody(props){
             ">{cardPrice} USD</p>
          </div>
 
-         <button onClick={() => dispatch(addToCart({id: product.id, qty: 1, title: product.title, price: product.price, image: product.image}))} 
+         <Alert message={'Added To Cart'}/>
+         <button onClick={() => {
+               dispatch(addToCart({id: product.id, qty: 1, title: product.title, price: product.price, image: product.image}))
+
+               handleAlert()
+            }
+         }
          className="h-max hover:text-secondary flex items-start pl-5">
             <svg className="h-[17px]
             md:h-[18px] 
@@ -77,6 +96,6 @@ function CardBody(props){
    )
 }
 
-// buat Nested Components
+// Nested Components
 CardProduct.Image = CardImage
 CardProduct.Body = CardBody

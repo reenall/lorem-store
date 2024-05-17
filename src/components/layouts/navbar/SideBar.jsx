@@ -1,6 +1,7 @@
+
 export default function SideBar(props){
    const { children, onToggle, name, position } = props
-
+   
    return (
       <div id={name} className={`fixed ${position} top-0 z-[999] flex flex-col h-screen bg-bgSecondary transition duration-1000 
       w-[350px]
@@ -22,6 +23,7 @@ export default function SideBar(props){
 
          {/* --------------- SideBar Content --------------- */}
          {children}
+
       </div>
    )
 }

@@ -27,11 +27,10 @@ export default function NavBar({ products }) {
       document.getElementById('card-nav-user').classList.toggle('-translate-y-full')
    }
 
-   function handleToggle(elementId, action1, action2 = ''){
+   function handleToggle(elementId, action1, action2){
       document.getElementById(elementId).classList.toggle(action1)
       document.getElementById(elementId).classList.toggle(action2)
    }
-
 
    return (
       <nav className="fixed z-50 w-full bg-bgPrimary dark:bg-darkBgPrimary transition-all duration-1000
@@ -52,6 +51,7 @@ export default function NavBar({ products }) {
                <div className="hamburger-stripe"></div>
                <div className="hamburger-stripe"></div>
             </button>
+
             <SideBar name={'menu'} position={'-translate-x-full left-0'} onToggle={() => handleToggle('menu', '-translate-x-full', 'shadow-2xl')}>
                <LeftBar/>
             </SideBar>
