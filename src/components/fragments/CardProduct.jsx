@@ -1,6 +1,5 @@
 import { useDispatch } from "react-redux"
 import { addToCart } from "../../redux/slices/cartSlice"
-import Alert from "../elements/Alert"
 
 export default function CardProduct({children}){
    return(
@@ -50,7 +49,6 @@ function CardImage({image, id, index}){
 }
 
 function CardBody(props){
-   // const {id, title, price, children} = props
    const {product} = props
    const priceToStr = product.price.toString()
    const cardPrice = priceToStr.substring(0, priceToStr.length - 3)
@@ -79,7 +77,6 @@ function CardBody(props){
             ">{cardPrice} USD</p>
          </div>
 
-         <Alert message={'Added To Cart'}/>
          <button onClick={() => {
                dispatch(addToCart({id: product.id, qty: 1, title: product.title, price: product.price, image: product.image}))
 

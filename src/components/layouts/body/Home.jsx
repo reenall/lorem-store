@@ -1,6 +1,6 @@
-export default function Hero(){
+export default function Home(){
    return (
-      <div id="hero" className="h-screen bg-bgSecondary dark:bg-darkBgPrimary transition duration-1000
+      <div id="home" className="h-screen bg-bgSecondary dark:bg-darkBgPrimary transition duration-1000
       pb-7
       md:pb-10
       ">

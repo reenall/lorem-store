@@ -57,32 +57,47 @@ body::-webkit-scrollbar {
 
 /* ------------ *General* ------------ */
 .section-title {
-  @apply text-center font-medium text-primary tracking-widest uppercase text-[25px]
-  md:text-[25px]
+  @apply text-center text-primary tracking-widest font-medium
+  text-[25px]
   lg:text-[30px]
   xl:text-[35px]
+}
+
+.stripe-title {
+  @apply relative tracking-widest first-letter:text-7xl first-letter:font-thin
+  text-4xl pl-[90px]
+  sm:text-3xl sm:uppercase
+  md:pl-[85px]
+  lg:text-4xl lg:pl-[115px]
+}
+
+.stripe-title::before {
+  @apply content-[""] bg-primary/20 h-[1px] absolute left-0 top-1/2
+  w-[80px]
+  md:w-[75px]
+  lg:w-[100px]
 }
 
 #alert {
   word-spacing: 5px
 }
 
-/* ------------ Hero ------------ */
-#hero > * img {
+/* ------------ Home ------------ */
+#home > * img {
   @apply h-full w-full object-cover object-top
 }
 
 /* ------------ Designer ------------ */
 .designer-text {
-  @apply first-letter:text-5xl first-letter:ml-3 first-line:uppercase font-medium text-sm
-  sm:first-letter:ml-5 sm:text-justify
+  @apply first-letter:text-5xl first-letter:ml-3 font-medium text-sm
+  sm:first-letter:ml-5 text-justify
   md:text-xs
   lg:text-sm
   xl:text-base
 }
 
-/* ------------ Hot Products ------------ */
-#hot-products > * img {
+/* ------------ Celestial Series ------------ */
+#celestial-series > * img {
   @apply shadow-xl h-[300px] w-full object-cover object-top
   sm:max-w-[160px] sm:min-w-[100px] sm:h-auto
   md:max-w-[200px] md:min-w-[150px]

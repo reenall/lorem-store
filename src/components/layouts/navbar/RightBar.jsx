@@ -89,12 +89,12 @@ export default function RightBar({ products }){
             <p className="text-slate-600 pb-2
             text-xs
             md:text-sm">Taxes and shipping calculated at checkout</p>
-            <div className="w-full flex items-center justify-center bg-black
+            <div className="w-full flex items-center justify-center bg-primary
             h-[40px]
             xl:h-[52px]">
                <h2 id="total-price" className="text-white
                text-base
-               xl:text-xl">Amount • <span className="font-mono 
+               xl:text-xl">Amount • <span className="font-mono font-normal
                text-sm 
                xl:text-base">${Intl.NumberFormat('id-ID').format(totalPrice)}</span></h2>
             </div>
