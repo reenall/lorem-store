@@ -58,7 +58,7 @@ export default function NavBar({ products }) {
 
             {/* Nav Brand */}
             <div className="text-center">
-               <a href="#hero" className="font-medium text-primary tracking-widest dark:text-darkPrimary
+               <a href="#home" className="font-medium text-primary tracking-widest dark:text-darkPrimary
                   text-[20px]
                   sm:text-[25px]
                   lg:text-[30px]

@@ -9,7 +9,7 @@ import CelestialSeries from "../components/layouts/body/CelestialSeries";
 import Designer from "../components/layouts/body/Designers";
 
 AOS.init({
-   // once: true
+   once: true
 });
 
 export default function ProductPage(){
